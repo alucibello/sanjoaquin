@@ -34,6 +34,8 @@ header img{
 }
 main{
     padding: 0 1em;
+    display: flex;
+
 }
 main h1{
  font-size: 150%;
@@ -74,6 +76,12 @@ header h3{
  font-size: 130%;
  font-style: italic;
  padding-left: 30px;
+}
+section{
+    width: 72%;
+}
+aside{
+    width: 22%;
 }
 ::shadow{
     text-shadow:3px 3px 5px #800000;
