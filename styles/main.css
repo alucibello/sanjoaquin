@@ -3,31 +3,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    max-width: 1200px;
 
 }
 html {
     background-color: white;
    padding: 0%;
 
+
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-
-        width: 600px;
+    font-size: 90%;
+   
+    
+        width: 50%;
         margin: 0 auto; 
-        border: 3px solid #931420;
+        border: .25% solid #931420;
         background-color: #fffded;
 
 }
 header{
     display: flex;
-    gap: 20px;
-        border-bottom: 3px solid #931420;
+    gap: 1.67%;
+        border-bottom: .25% solid #931420;
         padding: 1.5em 0 2em 0;
         background-image: linear-gradient(#f6bb73, white);
-
+        font-size: 200%;
 }
 header img{
     padding: 0 1em;
@@ -35,13 +37,14 @@ header img{
 main{
     padding: 0 1em;
     display: flex;
+    flex-direction: column;
 
 }
 main h1{
  font-size: 150%;
  padding: .3em 0;
- border-top: 3px solid #931420;
- border-bottom: 3px solid #931420;
+ border-top: .25% solid #931420;
+ border-bottom: .25% solid #931420;
 }
 main h2{
     font-size: 130% #800000;
@@ -75,13 +78,16 @@ header h2{
 header h3{
  font-size: 130%;
  font-style: italic;
- padding-left: 30px;
+ padding-left: 2.5%;
 }
 section{
     width: 72%;
 }
+section aside{
+    width: 95%;
+}
 #nav_menu{
-    border-bottom: 3px solid #800000;
+    border-bottom: .25% solid #800000;
     background-color: #800000;
 }
 #nav_menu ul{
@@ -103,12 +109,18 @@ color: white;
 #nav_menu a:hover{
     color: yellow;
 }
+img{   
+    width: 100%; 
+    max-width: 100%;
+    min-width: 70px; 
+    height: auto; 
+}
 
 aside{
-    width: 22%;
+    width: 95%;
 }
 ::shadow{
-    text-shadow:3px 3px 5px #800000;
+    text-shadow:.25% .25% .42% #800000;
 }
 footer{
     background-color: #931420;
@@ -117,3 +129,26 @@ footer p {
     color: white;
     padding: 1em 0;
 }
+.slicknav_menu{
+    background-color: #800000;
+}
+#mobilemenu { display: none;}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 767px) {
+main{
+    flex-direction: column;
+    width:95% ;
+    #mobilemenu { display: block; }
+    #nav_menu { display: none; }
+}
+}
+@media screen and (max-width: 767px) {
+    header{
+        font-size: 75%;
+    }
+    p{
+        font-size:75% ;
+    }
+
+    }
